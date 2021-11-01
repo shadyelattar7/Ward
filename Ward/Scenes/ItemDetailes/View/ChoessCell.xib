@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Tajawal-Medium.ttf">
+            <string>Tajawal-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ChoessCell" customModule="Ward" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="278" height="61"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="278" height="61"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p70-xR-yUX">
+                        <rect key="frame" x="0.0" y="0.0" width="278" height="61"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-Ru-gJY">
+                                <rect key="frame" x="0.0" y="0.0" width="278" height="57"/>
+                                <fontDescription key="fontDescription" name="Tajawal-Medium" family="Tajawal Medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VBz-5B-PIo">
+                                <rect key="frame" x="0.0" y="57" width="278" height="4"/>
+                                <color key="backgroundColor" name="MainColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="4" id="shP-ky-sg1"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="VBz-5B-PIo" secondAttribute="trailing" id="2XL-or-52A"/>
+                            <constraint firstAttribute="trailing" secondItem="HSy-Ru-gJY" secondAttribute="trailing" id="Odd-bq-ncT"/>
+                            <constraint firstItem="HSy-Ru-gJY" firstAttribute="leading" secondItem="p70-xR-yUX" secondAttribute="leading" id="Xqz-L1-6CC"/>
+                            <constraint firstItem="HSy-Ru-gJY" firstAttribute="top" secondItem="p70-xR-yUX" secondAttribute="top" id="rzB-gF-uxs"/>
+                            <constraint firstItem="VBz-5B-PIo" firstAttribute="top" secondItem="HSy-Ru-gJY" secondAttribute="bottom" id="skl-9i-Usn"/>
+                            <constraint firstItem="VBz-5B-PIo" firstAttribute="leading" secondItem="p70-xR-yUX" secondAttribute="leading" id="v78-HA-x8k"/>
+                            <constraint firstAttribute="bottom" secondItem="VBz-5B-PIo" secondAttribute="bottom" id="zJd-uq-FGa"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="p70-xR-yUX" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="6sY-Cj-KSZ"/>
+                <constraint firstItem="p70-xR-yUX" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="AXg-Pk-QQ2"/>
+                <constraint firstAttribute="bottom" secondItem="p70-xR-yUX" secondAttribute="bottom" id="BlU-ne-hn2"/>
+                <constraint firstAttribute="trailing" secondItem="p70-xR-yUX" secondAttribute="trailing" id="GJg-L5-0TB"/>
+            </constraints>
+            <size key="customSize" width="278" height="61"/>
+            <connections>
+                <outlet property="lineView" destination="VBz-5B-PIo" id="SLN-kN-8OU"/>
+                <outlet property="title_lbl" destination="HSy-Ru-gJY" id="Xfe-5E-sf7"/>
+            </connections>
+            <point key="canvasLocation" x="-27.536231884057973" y="85.379464285714278"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="MainColor">
+            <color red="0.94900000095367432" green="0.18799999356269836" blue="0.49399998784065247" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
