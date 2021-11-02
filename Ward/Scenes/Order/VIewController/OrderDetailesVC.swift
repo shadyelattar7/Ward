@@ -196,11 +196,11 @@ class OrderDetailesVC: UIViewController {
     }
     
     @IBAction func cancelTapped(_ sender: Any) {
-       // cancelOrder(order_id: orders?.id ?? 0)
+        cancelOrder(order_id: orders?.id ?? 0)
         
-        let rate = RateVC()
-        rate.modalPresentationStyle = .overFullScreen
-        self.present(rate, animated: true, completion: nil)
+//        let rate = RateVC()
+//        rate.modalPresentationStyle = .overFullScreen
+//        self.present(rate, animated: true, completion: nil)
     }
     
     @IBAction func goToPaymentTapped(_ sender: Any) {
